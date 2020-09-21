@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+body ul{
+    list-style: none;
+    margin: 0;
+}
+
+
+/*Top Header*/
+
+.logo{
+    width: 235px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.main-nav{
+    background-color: #ffffff!important;
+    padding: 0;
+}
+
+#primary-nav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 35px 100px;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+.nav li a{
+    color: #1e1e1e;
+}
+
+/*End of top header*/
+
+/*Header banner*/
+
+.header-banner{
+    background-image: radial-gradient(circle at 55%, transparent, #000000), url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-inner{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-inner h6{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.banner-inner h5{
+    font-size: 34px;
+}
+
+.banner-inner h4{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.banner-inner .brand-name{
+    font-size: 82px;
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+}
+
+.banner-inner .banner-inner_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-inner .banner-inner_buttons a{
+    padding: 15px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    display: block;
+    font-size: 16px;
+}
+
+/*End of header Banner*/
+
+
+/*Section 1*/
+
+.section-title{
+    text-align: center;
+    font-size: 36px;
+    padding: 50px 0 0 0;
+}
+
+.section-title h1{
+    font-weight: 700;
+}
+
+.title-divider{
+    width: 100px;
+    margin: 30px auto;
+    height: 3px;
+    background-color: #000000;
+}
+
+.section-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.section-text p{
+    margin-bottom: 30px;
+}
+
+/*End of Section 1*/
+
+/*Section 2*/
+
+.section-2-slider .slider-item{
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* -------Section 2 table ----------*/
+.chart-section{
+    background-image: url("../img/section-2-bgr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+
+.chart-table{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 0 20px #bbbbbb;
+}
+
+.chart-table table{
+    width: 100%;
+}
+
+.chart-table table tr:nth-child(odd){
+    background-color: #eaeaea;
+}
+
+.chart-table table tr:nth-child(even){
+    background-color: #ffffff;
+}
+
+
+.chart-table table th{
+    padding: 15px;
+}
+
+.chart-table table td{
+    text-align: center;
+}
+
+.chart-table table tr:first-child, .chart-table table tr:nth-child(2){
+    font-weight: 800;
+}
+
+/*End of section 2*/
+
+
+/*Section 3 - catalog section*/
+
+.catalog-section{
+    padding-bottom: 50px;
+}
+
+.catalog-item_main{
+    border:solid 1px #dbdbdf;
+    margin-bottom: 20px;
+}
+
+/*--- Catalog Tabs ---*/
+
+.catalog-tab{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.catalog-tab .active-tab a{
+    background-color: #ba0152;
+    color: #ffffff;
+}
+
+.catalog-tab_item{
+    text-align: center;
+}
+
+.catalog-tab_item a{
+    display: block;
+    padding: 27px 34px;
+    background-color: #f3f3f3;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+}
+
+.catalog-tab_item a:hover{
+    text-decoration: none;
+}
+
+
+
+.catalog-img{
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.catalog-item_sale_label{
+    width: 60px;
+    height: 60px;
+    background-color: #b4014e;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.catalog-item_sale_label p{
+    font-size: 20px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.catalog-item_content{
+    padding: 20px 0;
+}
+
+.catalog-item_title{
+    text-align: center;
+    padding: 0 0 14px 0;
+}
+
+.catalog-item_title span{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.catalog-item_size ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 47px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.catalog-item_size ul li a{
+    color: #dbdbdf;
+}
+
+.catalog-item_size ul li .size-on-stock{
+    color: #1e1e1e;
+}
+
+.catalog-item_size ul li a:hover{
+    text-decoration: none;
+}
+
+.catalog-item_color{
+    margin: 14px 0;
+}
+
+.catalog-item_color ul{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.catalog-item_color ul li{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #dbdbdf;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.catalog-item_price{
+    margin-bottom: 20px;
+}
+
+.catalog-item_price ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.catalog-item_price ul .old-price{
+    color: #8c8c8c;
+    text-decoration: line-through;
+}
+
+.catalog-item_price ul .new-price{
+    color: #b4014e;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.catalog-order-btn{
+    text-align: center;
+}
+
+.catalog-order-btn a{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 90px;
+    border-radius: 10px;
+    display: block;
+    background: rgb(141,84,233);
+    background: linear-gradient(180deg, rgba(141,84,233,1) 0%, rgba(110,99,232,1) 35%, rgba(72,117,230,1) 100%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 4px #375cb3;
+}
+
+.catalog-order-btn a:hover{
+    text-decoration: none;
+}
