@@ -70,3 +70,13 @@ $('.banner-inner_buttons a').on('click', function () {
         }
     })
 })
+
+/*Mobile nav icon*/
+
+$('.nav-burger-icon').on('click', function () {
+    $('.mobile-nav-menu').toggleClass('mobile-nav-menu-open')
+});
+
+$('.mobile-nav-ul').on('click', function () {
+    $('.mobile-nav-menu').removeClass('mobile-nav-menu-open')
+})
