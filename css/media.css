@@ -1,0 +1,97 @@
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+}
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-menu {
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+
+    .nav-item{
+        margin-bottom: 15px;
+    }
+
+    .chart-table table{
+        font-size: 12px;
+    }
+
+    .section-title h1{
+        font-size: 2rem;
+    }
+
+    .section-text p{
+        font-size: 0.8rem;
+    }
+
+    .order-section{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    .banner-inner .banner-inner_buttons{
+        padding: 0 15px;
+    }
+
+    .banner-inner .banner-inner_buttons a{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .port-modal .modal-content .modal-order-block{
+        padding: 7px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 180px;
+    }
+
+    .banner-inner{
+        height: inherit;
+    }
+
+    .banner-inner .brand-name{
+        font-size: 50px;
+    }
+
+    .banner-inner .banner-inner_buttons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chart-table table{
+        font-size: 9px;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+    .chart-table table{
+        font-size: 6px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+}
