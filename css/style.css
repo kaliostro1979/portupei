@@ -13,6 +13,10 @@ body ul{
     margin: 0;
 }
 
+body a:hover{
+    text-decoration: none;
+}
+
 
 /*Top Header*/
 
@@ -204,6 +208,14 @@ body ul{
 
 /*Section 3 - catalog section*/
 
+.catalog-row{
+    display: none;
+}
+
+.active-row{
+    display: flex;
+}
+
 .catalog-section{
     padding-bottom: 50px;
 }
@@ -223,7 +235,7 @@ body ul{
     margin-bottom: 20px;
 }
 
-.catalog-tab .active-tab a{
+.catalog-tab .active-tab button{
     background-color: #ba0152;
     color: #ffffff;
 }
@@ -232,17 +244,18 @@ body ul{
     text-align: center;
 }
 
-.catalog-tab_item a{
+.catalog-tab_item button{
     display: block;
     padding: 27px 34px;
     background-color: #f3f3f3;
     font-size: 18px;
     text-transform: uppercase;
     color: #1e1e1e;
+    border: none;
 }
 
-.catalog-tab_item a:hover{
-    text-decoration: none;
+.catalog-tab_item button:focus{
+    outline: none;
 }
 
 
@@ -332,7 +345,7 @@ body ul{
     margin-bottom: 20px;
 }
 
-.catalog-item_price ul{
+.catalog-item_price ul, .modal-item-price ul{
     display: flex;
     justify-content: space-between;
     padding: 0 60px;
@@ -340,12 +353,12 @@ body ul{
     align-items: center;
 }
 
-.catalog-item_price ul .old-price{
+.catalog-item_price ul .old-price, .modal-item-price ul .old-price{
     color: #8c8c8c;
     text-decoration: line-through;
 }
 
-.catalog-item_price ul .new-price{
+.catalog-item_price ul .new-price, .modal-item-price ul .new-price{
     color: #b4014e;
     font-weight: 800;
     font-size: 30px;
@@ -355,7 +368,7 @@ body ul{
     text-align: center;
 }
 
-.catalog-order-btn a{
+.catalog-order-btn button, .modal-order-btn button{
     width: 90%;
     margin: 0 auto;
     padding: 20px 90px;
@@ -366,9 +379,163 @@ body ul{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
+
+}
+
+.catalog-order-btn button:hover, .modal-order-btn button:hover{
+    outline: none;
     box-shadow: 0 4px #375cb3;
 }
 
-.catalog-order-btn a:hover{
-    text-decoration: none;
+.catalog-order-btn button:focus, .modal-order-btn button:focus{
+    outline: none;
+    box-shadow: unset;
+}
+
+/*Order Steps section*/
+
+.order-section{
+    background-color: #f7f2f4;
+    padding-bottom: 100px;
+}
+
+.order-steps{
+    width: 138px;
+    height: 138px;
+    border: 6px solid #d579a1;
+    border-radius: 50%;
+    background-color: #b4014e;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.order-steps-line{
+    width: 79%;
+    height: 2px;
+    border-top: dotted 2px #d8d7db;
+    margin-top: 45px!important;
+    margin: 0 auto;
+}
+
+.order-steps-line ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -9px;
+}
+
+.order-steps-line ul li{
+    width: 16px;
+    height: 16px;
+    background-color: #ceced3;
+    border: 3px solid #ebe7ea;
+    border-radius: 50%;
+}
+
+.order-steps_text{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+/*Modal*/
+
+.port-modal .fade{
+    transition: none;
+    transform: none;
+    -webkit-transform: none;
+}
+
+.port-modal .show{
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.port-modal .modal-dialog {
+    width: 650px;
+    margin: 0;
+
+}
+
+.port-modal .close {
+    position: absolute;
+    right: 13px;
+    top: 7px;
+}
+
+.port-modal .close:focus{
+    outline: none;
+}
+
+.port-modal .modal-content{
+    flex-direction: row;
+}
+
+.port-modal .modal-content .modal-order-block .modal-title_block{
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+}
+
+.port-modal .modal-content .modal-order-block{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.port-modal .modal-content .modal-order-block input{
+    outline: none;
+    width: 100%;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.port-modal .modal-img{
+    width: 50%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.port-modal .modal-content .modal-order-block .modal-size_select select{
+    outline: none;
+    padding: 4px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: unset;
+    border-radius: 0;
+    text-indent: 50%;
+}
+
+.port-modal .modal-content .modal-footer{
+    border: none;
+    padding: 0;
+}
+
+
+.modal-item-price ul{
+    padding: 0 15px;
+}
+
+.modal-item-price ul .old-price{
+    font-size: 20px;
+}
+
+.modal-item-price ul .new-price{
+    font-size: 25px;
+}
+
+.modal-order-btn button{
+    padding: 4px 0;
+    width: 100%;
+    border-radius: 4px;
 }

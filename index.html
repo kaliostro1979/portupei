@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -46,8 +47,8 @@
             <h6>Любая модель со скидкой 50%</h6>
             <h4>всего <span class="discount-cost">2990р</span></h4>
             <div class="banner-inner_buttons">
-                <a href="#">повседневные портупеи</a>
-                <a href="#">Эротические портупеи</a>
+                <a href="#simple" name="simple">повседневные портупеи</a>
+                <a href="#erotic" name="erotic">Эротические портупеи</a>
             </div>
         </div>
     </div>
@@ -76,18 +77,18 @@
     </div>
 </section>
 <section>
-        <div class="section-2-slider owl-carousel">
-            <div class="slider-item" style="background-image: url('./img/slider/slide-1.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-2.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-3.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-4.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-5.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-6.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-7.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-5.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-6.png')"></div>
-            <div class="slider-item" style="background-image: url('./img/slider/slide-7.png')"></div>
-        </div>
+    <div class="section-2-slider owl-carousel">
+        <div class="slider-item" style="background-image: url('./img/slider/slide-1.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-2.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-3.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-4.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-5.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-6.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-7.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-5.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-6.png')"></div>
+        <div class="slider-item" style="background-image: url('./img/slider/slide-7.png')"></div>
+    </div>
 </section>
 <section class="chart-section">
     <div class="container">
@@ -167,246 +168,502 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="catalog-tab">
-                    <div class="catalog-tab_item active-tab">
-                        <a href="">повседневные портупеи</a>
+                    <div class="catalog-tab_item active-tab" name="simple">
+                        <button>повседневные портупеи</button>
                     </div>
-                    <div class="catalog-tab_item">
-                        <a href="">эротичесские портупеи</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="catalog-item_main">
-                    <div class="catalog-img" style="background-image: url('./img/catalog-img/item-1.png')">
-                        <div class="catalog-item_sale_label">
-                            <p>- <span>53</span>%</p>
-                        </div>
-                    </div>
-                    <div class="catalog-item_content">
-                        <div class="catalog-item_title">
-                            <span>Портупея “Пеппи”</span>
-                        </div>
-                        <div class="catalog-item_size">
-                            <ul>
-                                <li><a href="" class="size-on-stock">xs</a></li>
-                                <li><a href="" class="size-on-stock">s</a></li>
-                                <li><a href="" class="size-on-stock">m</a></li>
-                                <li><a href="">l</a></li>
-                                <li><a href="">xl</a></li>
-                                <li><a href="">xxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_color">
-                            <ul>
-                                <li style="background-color: #000000"></li>
-                                <li style="background-color: #ff0000"></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_price">
-                            <ul>
-                                <li class="old-price">4990 <span>р.</span></li>
-                                <li class="new-price">2990 <span>р.</span></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-order-btn">
-                            <a href="">заказать</a>
-                        </div>
+                    <div class="catalog-tab_item" name="erotic">
+                        <button>эротичесские портупеи</button>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="catalog-item_main">
-                    <div class="catalog-img" style="background-image: url('./img/catalog-img/item-2.png')">
-                        <div class="catalog-item_sale_label">
-                            <p>- <span>53</span>%</p>
+                <div class="row  catalog-row active-row" id="simple" name="simple">
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/item-1.png')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Пеппи”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="catalog-item_content">
-                        <div class="catalog-item_title">
-                            <span>Портупея “Пеппи”</span>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/item-2.png')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Влади”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item_size">
-                            <ul>
-                                <li><a href="" class="size-on-stock">xs</a></li>
-                                <li><a href="" class="size-on-stock">s</a></li>
-                                <li><a href="" class="size-on-stock">m</a></li>
-                                <li><a href="">l</a></li>
-                                <li><a href="">xl</a></li>
-                                <li><a href="">xxl</a></li>
-                            </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/item-3.png')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Джони Миллер”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item_color">
-                            <ul>
-                                <li style="background-color: #000000"></li>
-                                <li style="background-color: #ff0000"></li>
-                            </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/item-1.png')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Пеппи”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-item_price">
-                            <ul>
-                                <li class="old-price">4990 <span>р.</span></li>
-                                <li class="new-price">2990 <span>р.</span></li>
-                            </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/item-2.png')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Влади”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog-order-btn">
-                            <a href="">заказать</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/item-3.png')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Джони Миллер”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="catalog-item_main">
-                    <div class="catalog-img" style="background-image: url('./img/catalog-img/item-3.png')">
-                        <div class="catalog-item_sale_label">
-                            <p>- <span>53</span>%</p>
+                <div class="row catalog-row" id="erotic" name="erotic">
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/er-item-1.jpg')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Пеппи”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="catalog-item_content">
-                        <div class="catalog-item_title">
-                            <span>Портупея “Пеппи”</span>
-                        </div>
-                        <div class="catalog-item_size">
-                            <ul>
-                                <li><a href="" class="size-on-stock">xs</a></li>
-                                <li><a href="" class="size-on-stock">s</a></li>
-                                <li><a href="" class="size-on-stock">m</a></li>
-                                <li><a href="">l</a></li>
-                                <li><a href="">xl</a></li>
-                                <li><a href="">xxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_color">
-                            <ul>
-                                <li style="background-color: #000000"></li>
-                                <li style="background-color: #ff0000"></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_price">
-                            <ul>
-                                <li class="old-price">4990 <span>р.</span></li>
-                                <li class="new-price">2990 <span>р.</span></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-order-btn">
-                            <a href="">заказать</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="catalog-item_main">
-                    <div class="catalog-img" style="background-image: url('./img/catalog-img/item-1.png')">
-                        <div class="catalog-item_sale_label">
-                            <p>- <span>53</span>%</p>
-                        </div>
-                    </div>
-                    <div class="catalog-item_content">
-                        <div class="catalog-item_title">
-                            <span>Портупея “Пеппи”</span>
-                        </div>
-                        <div class="catalog-item_size">
-                            <ul>
-                                <li><a href="" class="size-on-stock">xs</a></li>
-                                <li><a href="" class="size-on-stock">s</a></li>
-                                <li><a href="" class="size-on-stock">m</a></li>
-                                <li><a href="">l</a></li>
-                                <li><a href="">xl</a></li>
-                                <li><a href="">xxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_color">
-                            <ul>
-                                <li style="background-color: #000000"></li>
-                                <li style="background-color: #ff0000"></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_price">
-                            <ul>
-                                <li class="old-price">4990 <span>р.</span></li>
-                                <li class="new-price">2990 <span>р.</span></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-order-btn">
-                            <a href="">заказать</a>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/er-item-2.jpg')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Влади”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="catalog-item_main">
-                    <div class="catalog-img" style="background-image: url('./img/catalog-img/item-2.png')">
-                        <div class="catalog-item_sale_label">
-                            <p>- <span>53</span>%</p>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/er-item-3.jpg')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Джони Миллер”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="catalog-item_content">
-                        <div class="catalog-item_title">
-                            <span>Портупея “Пеппи”</span>
-                        </div>
-                        <div class="catalog-item_size">
-                            <ul>
-                                <li><a href="" class="size-on-stock">xs</a></li>
-                                <li><a href="" class="size-on-stock">s</a></li>
-                                <li><a href="" class="size-on-stock">m</a></li>
-                                <li><a href="">l</a></li>
-                                <li><a href="">xl</a></li>
-                                <li><a href="">xxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_color">
-                            <ul>
-                                <li style="background-color: #000000"></li>
-                                <li style="background-color: #ff0000"></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_price">
-                            <ul>
-                                <li class="old-price">4990 <span>р.</span></li>
-                                <li class="new-price">2990 <span>р.</span></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-order-btn">
-                            <a href="">заказать</a>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/er-item-1.jpg')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Пеппи”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="catalog-item_main">
-                    <div class="catalog-img" style="background-image: url('./img/catalog-img/item-3.png')">
-                        <div class="catalog-item_sale_label">
-                            <p>- <span>53</span>%</p>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/er-item-2.jpg')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Влади”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="catalog-item_content">
-                        <div class="catalog-item_title">
-                            <span>Портупея “Пеппи”</span>
-                        </div>
-                        <div class="catalog-item_size">
-                            <ul>
-                                <li><a href="" class="size-on-stock">xs</a></li>
-                                <li><a href="" class="size-on-stock">s</a></li>
-                                <li><a href="" class="size-on-stock">m</a></li>
-                                <li><a href="">l</a></li>
-                                <li><a href="">xl</a></li>
-                                <li><a href="">xxl</a></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_color">
-                            <ul>
-                                <li style="background-color: #000000"></li>
-                                <li style="background-color: #ff0000"></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-item_price">
-                            <ul>
-                                <li class="old-price">4990 <span>р.</span></li>
-                                <li class="new-price">2990 <span>р.</span></li>
-                            </ul>
-                        </div>
-                        <div class="catalog-order-btn">
-                            <a href="">заказать</a>
+                    <div class="col-lg-4">
+                        <div class="catalog-item_main">
+                            <div class="catalog-img" style="background-image: url('./img/catalog-img/er-item-3.jpg')">
+                                <div class="catalog-item_sale_label">
+                                    <p>- <span>53</span>%</p>
+                                </div>
+                            </div>
+                            <div class="catalog-item_content">
+                                <div class="catalog-item_title">
+                                    <span>Портупея “Джони Миллер”</span>
+                                </div>
+                                <div class="catalog-item_size">
+                                    <ul>
+                                        <li><a href="" class="size-on-stock">xs</a></li>
+                                        <li><a href="" class="size-on-stock">s</a></li>
+                                        <li><a href="" class="size-on-stock">m</a></li>
+                                        <li><a href="">l</a></li>
+                                        <li><a href="">xl</a></li>
+                                        <li><a href="">xxl</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_color">
+                                    <ul>
+                                        <li style="background-color: #000000"></li>
+                                        <li style="background-color: #ff0000"></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item_price">
+                                    <ul>
+                                        <li class="old-price">4990 <span>р.</span></li>
+                                        <li class="new-price">2990 <span>р.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-order-btn">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -414,6 +671,130 @@
         </div>
     </div>
 </section>
+<section class="order-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h1>Как закзать?</h1>
+                    <div class="title-divider"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="order-steps">
+                    <i class="far fa-newspaper"></i>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="order-steps">
+                    <i class="fas fa-headset"></i>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="order-steps">
+                    <i class="fas fa-box"></i>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="order-steps">
+                    <i class="far fa-credit-card"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="order-steps-line">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="order-steps_text">
+                    <p>
+                        Вы оформляете заказ на нашем сайте
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="order-steps_text">
+                    <p>
+                        Менеджр перезвонит для уточнения деталей заказа
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="order-steps_text">
+                    <p>
+                        В блежайшее время отправляем ваш заказ
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="order-steps_text">
+                    <p>
+                        Вы оплачиваете заказ при получении
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="port-modal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-img" style="background-image: url('./img/catalog-img/item-1.png')"></div>
+                <div class="modal-order-block">
+                    <div class="modal-title_block">
+                        <span>Портупея “Джони Миллер”</span>
+                    </div>
+                    <div class="modal-item-price">
+                        <ul>
+                            <li class="old-price">4990 <span>р.</span></li>
+                            <li class="new-price">2990 <span>р.</span></li>
+                        </ul>
+                    </div>
+                    <div class="modal-size_select">
+                        <select class="form-control">
+                            <option>xs</option>
+                            <option>s</option>
+                            <option>m</option>
+                            <option>l</option>
+                            <option>xl</option>
+                        </select>
+                    </div>
+                    <div class="modal-info-block">
+                        <input type="text" placeholder="Введите ваше">
+                    </div>
+                    <div class="modal-phone-number">
+                        <input type="tel" placeholder="Введите ваш телефон">
+                    </div>
+                    <div class="modal-footer modal-order-btn">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            заказать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
